@@ -171,4 +171,90 @@ let newText=text.replace("Microsoft","Google");
 
 text.split(",")    // Split on commas
 text.split(" ")    // Split on spaces
+<<<<<<< HEAD
 text.split("|")
+=======
+text.split("|");
+
+const string1 = "A string primitive";
+const string2 = 'Also a string primitive';
+const string3 = `Yet another string primitive`;
+
+const string4 = new String("A String object");
+
+"cat".charAt(1); // gives value "a"
+"cat"[1]; // gives value "a"
+
+const a = "a";
+const b = "b";
+if (a < b) {
+  // true
+  console.log(`${a} is less than ${b}`);
+} else if (a > b) {
+  console.log(`${a} is greater than ${b}`);
+} else {
+  console.log(`${a} and ${b} are equal.`);
+}
+
+
+const areEqualInUpperCase = (str1, str2) =>
+  str1.toUpperCase() === str2.toUpperCase();
+const areEqualInLowerCase = (str1, str2) =>
+  str1.toLowerCase() === str2.toLowerCase();
+
+areEqualInUpperCase("ß", "ss"); // true; should be false
+areEqualInLowerCase("ı", "I"); // false; should be true
+
+
+
+// Boolean Operators  
+alert( 2 > 1 );  // true (correct)
+alert( 2 == 1 ); // false (wrong)
+alert( 2 != 1 ); // true (correct)
+
+
+let result1 = 5 > 4; // assign the result of the comparison
+alert( result1 ); // true
+
+alert( 'Z' > 'A' ); // true
+alert( 'Glow' > 'Glee' ); // true
+alert( 'Bee' > 'Be' ); // true
+
+
+alert( '2' > 1 ); // true, string '2' becomes a number 2
+alert( '01' == 1 ); // true, string '01' becomes a number 1
+
+
+alert( true == 1 ); // true
+alert( false == 0 ); // true
+
+
+let aa = 0;
+alert( Boolean(aa) ); // false
+
+let bb = "0";
+alert( Boolean(bb) ); // true
+
+alert(a == b); // true!
+
+alert( 0 == false ); // true
+
+alert( '' == false ); // true
+
+
+result = a || b;
+
+alert( true || true );   // true
+alert( false || true );  // true
+alert( true || false );  // true
+alert( false || false ); // false
+
+if (1 || 0) { // works just like if( true || false )
+  alert( 'truthy!' );
+}
+
+let hour = 9;
+
+if (hour < 10 || hour > 18) {
+  console.log( 'The office is closed.' );
+}
